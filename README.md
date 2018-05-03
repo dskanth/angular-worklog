@@ -1,5 +1,7 @@
 # Worklog
 
+This is a sample example showing how to create tasks and list them, as a worklog. It was developed using Angular 4.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
 
 ## Development server
