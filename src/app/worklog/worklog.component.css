@@ -1,0 +1,16 @@
+.workhours_list {
+    list-style: none;
+}
+.workhours {
+    padding: 20px;
+    background: #343434;
+    color: #e4e4e4;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.workhours-creator {
+    background: #ededed;
+    padding: 10px;
+    margin: 5px;
+}

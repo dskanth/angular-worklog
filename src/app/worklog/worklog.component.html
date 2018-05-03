@@ -1,0 +1,36 @@
+<div style="text-align:center; margin:10px 0;">
+  <b>Work Hours</b>
+</div>
+
+<li class="workhours_list" *ngFor="let i of workhours">
+    <div class="workhours">
+    <span> <b> Project: </b>  {{ i.project }}  || </span>
+    <span>  <b> Task: </b>  {{ i.task }}  || </span>
+    <span>  <b> Date: </b> {{ i.date }}  </span>	
+    <span> <button class="btn btn-primary" (click)="details(i.id)"> Details </button> </span>
+    </div>
+</li>
+
+<hr>
+
+<div class="workhours-creator">
+<div>
+    <input [(ngModel)]="projectModel" placeholder="Enter project name" class="form-control">
+</div>
+<hr>
+<div>
+    <input type="text" [(ngModel)]="taskModel" placeholder="Enter task" class="form-control">
+</div>
+<hr>
+<div>
+    <input [(ngModel)]="dateModel" placeholder="Date" class="form-control">
+</div>
+<hr>
+<div>
+    <textarea type="textarea" rows="4" cols="20" [(ngModel)]="detailsModel" placeholder="Details" class="form-control">
+    </textarea>
+</div>
+<br>
+
+<button class="btn" (click)="createWorklog()">Add Work Hours</button>
+</div>
